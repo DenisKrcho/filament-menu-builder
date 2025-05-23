@@ -92,7 +92,7 @@ class MenuItems extends Component implements HasActions, HasForms
                         TextInput::make('title')
                             ->label(__('filament-menu-builder::menu-builder.form.title'))
                             ->required(),
-                    ])
+                    ]),
                 TextInput::make('url')
                     ->hidden(fn (?string $state, Get $get): bool => blank($state) || filled($get('linkable_type')))
                     ->label(__('filament-menu-builder::menu-builder.form.url'))
