@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "DenisKrcho\\FilamentMenuBuilder\\": "src/",
-            "DenisKrcho\\FilamentMenuBuilder\\Database\\Factories\\": "database/factories/"
+            "Datlechin\\FilamentMenuBuilder\\": "src/",
+            "Datlechin\\FilamentMenuBuilder\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "DenisKrcho\\FilamentMenuBuilder\\Tests\\": "tests/"
+            "Datlechin\\FilamentMenuBuilder\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -59,10 +59,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "DenisKrcho\\FilamentMenuBuilder\\FilamentMenuBuilderServiceProvider"
+                "Datlechin\\FilamentMenuBuilder\\FilamentMenuBuilderServiceProvider"
             ],
             "aliases": {
-                "FilamentMenuBuilder": "DenisKrcho\\FilamentMenuBuilder\\Facades\\FilamentMenuBuilder"
+                "FilamentMenuBuilder": "Datlechin\\FilamentMenuBuilder\\Facades\\FilamentMenuBuilder"
             }
         }
     },
