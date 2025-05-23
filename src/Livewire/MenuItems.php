@@ -27,6 +27,7 @@ use Illuminate\Support\Facades\DB;
 use Livewire\Attributes\Computed;
 use Livewire\Attributes\On;
 use Livewire\Component;
+use SolutionForest\FilamentTranslateField\Forms\Component\Translate;
 
 class MenuItems extends Component implements HasActions, HasForms
 {
@@ -86,9 +87,12 @@ class MenuItems extends Component implements HasActions, HasForms
                 ->first()
                 ->toArray())
             ->form([
-                TextInput::make('title')
-                    ->label(__('filament-menu-builder::menu-builder.form.title'))
-                    ->required(),
+                Translate::make()
+                    ->schema([
+                        TextInput::make('title')
+                            ->label(__('filament-menu-builder::menu-builder.form.title'))
+                            ->required(),
+                    ])
                 TextInput::make('url')
                     ->hidden(fn (?string $state, Get $get): bool => blank($state) || filled($get('linkable_type')))
                     ->label(__('filament-menu-builder::menu-builder.form.url'))
