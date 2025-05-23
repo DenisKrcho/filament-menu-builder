@@ -1,15 +1,15 @@
 {
-    "name": "datlechin/filament-menu-builder",
+    "name": "DenisKrcho/filament-menu-builder",
     "description": "Create and manage menus and menu items",
     "keywords": [
         "datlechin",
         "laravel",
         "filament-menu-builder"
     ],
-    "homepage": "https://github.com/datlechin/filament-menu-builder",
+    "homepage": "https://github.com/DenisKrcho/filament-menu-builder",
     "support": {
-        "issues": "https://github.com/datlechin/filament-menu-builder/issues",
-        "source": "https://github.com/datlechin/filament-menu-builder"
+        "issues": "https://github.com/DenisKrcho/filament-menu-builder/issues",
+        "source": "https://github.com/DenisKrcho/filament-menu-builder"
     },
     "license": "MIT",
     "authors": [
@@ -59,10 +59,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Datlechin\\FilamentMenuBuilder\\FilamentMenuBuilderServiceProvider"
+                "DenisKrcho\\FilamentMenuBuilder\\FilamentMenuBuilderServiceProvider"
             ],
             "aliases": {
-                "FilamentMenuBuilder": "Datlechin\\FilamentMenuBuilder\\Facades\\FilamentMenuBuilder"
+                "FilamentMenuBuilder": "DenisKrcho\\FilamentMenuBuilder\\Facades\\FilamentMenuBuilder"
             }
         }
     },
